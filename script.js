@@ -9,6 +9,7 @@ function increaseScore() {
   buttonsEnabler();
   displayScore();
 }
+}
 function autoclickF() {
   if (autoclickOn) {
     increaseScore();
