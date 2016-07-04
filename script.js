@@ -1,38 +1,29 @@
-$bouton = document.getElementById("bouton");
-$multiplicateur = document.getElementById("multiplicateur");
-$score = document.getElementById("score");
-score = 0;
-nbMultiplicateur = 1;
 
-function afficherScore() {
-    $score.innerHTML = "Score : " + score;
-}
+var score = 0;
+var btn = document.getElementById("btn");
+btn.onclick = function () {
 
-function afficherNbMultiplicateur() {
-    $multiplicateur.innerHTML = "Multiplicateur x" + nbMultiplicateur + " (prix du prochain : " + prix() + ")";
-}
-
-function clic() {
-    score = score + nbMultiplicateur;
-    afficherScore();
-}
-
-function prix() {
-    return 20 * nbMultiplicateur ;
-}
-
-function acheterMultiplicateur() {
-    if (score >= prix()) {
-        score = score - prix();
-        nbMultiplicateur = nbMultiplicateur + 1;
-        afficherNbMultiplicateur();
-        afficherScore();
+    if (click >= 1) {    Multiply
+        score = score + click;
     } else {
-        alert("Votre score est insuffisant !");
+        score = score + 1;
     }
-}
-
-$bouton.onclick = clic;
-$multiplicateur.onclick = acheterMultiplicateur;
-afficherScore();
-afficherNbMultiplicateur();
+    document.getElementById("display").innerHTML = score;
+};
+var multiply = document.getElementById("multiply");
+var click = 0;
+multiply.onclick = function augmenterMultiplicateur() {
+    var price =  click * 50 ; multiplier
+    if (score > price || 50 ){  
+    click++;
+    if (price !== 0){ 
+    
+ }else {
+   score = score - 50;   
+ }
+     document.getElementById("display").innerHTML = score;
+     
+    }
+    multiply.innerHTML = "x"+ click;
+    
+};
