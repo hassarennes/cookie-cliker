@@ -18,7 +18,7 @@ function clic() {
 }
 
 function prix() {
-    return 20 * nbMultiplicateur * nbMultiplicateur;
+    return 20 * nbMultiplicateur ;
 }
 
 function acheterMultiplicateur() {
