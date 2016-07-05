@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: red;
+}
+
+
+/*====================================*/
+/*===============BASE===========)=====*/
+/*====================================*/
+
+body {
+    background-image: url(../elements/img/fond_body.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.first {
+    margin-top: 60px;
+}
+
+
+
+
+/*====================================*/
+/*===============BOUTON===============*/
+/*====================================*/
+
+.container {
+    background-color: yellow !important;
+    border: 0px !important;
+    color: steelblue!important;
+}
+.contain2 {
+    background-color: green !important;
+    border: 0px !important;
+    color: steelblue!important;
+}
+.text-bouton {
+    font-size: 15px;
+    margin-top: 10px;
+}
